@@ -1,12 +1,20 @@
 import os
 import time
-import colorama
-from colorama import Fore, Style
+
+try:
+	import colorama
+	from colorama import Fore, Style
+except:
+	os.system('pip install colorama')
+	import colorama
+	from colorama import Fore, Style
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 # CONFIG #
+
+DIRECTORY = "C:/Users/ **NAME PC** /AppData/Local/Google/Chrome/User Data/ ** A NAME OF THE FOLDER** "
 
 # SCRIPT #
 
@@ -16,7 +24,7 @@ options.add_argument("--disable-blink-features")
 options.add_argument("--disable-infobars")
 options.add_argument("--mute-audio")
 
-options.add_argument(r"user-data-dir="+"C:/Users/GameSTALkER/AppData/Local/Google/Chrome/User Data/Profile 5")
+options.add_argument(r"user-data-dir="+DIRECTORY)
 
 browser = webdriver.Chrome(executable_path = './chromedriver.exe', options = options)
 
