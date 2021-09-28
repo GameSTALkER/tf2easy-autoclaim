@@ -1,5 +1,5 @@
 # tf2easy-autoclaim
-how to use:
+how to use:\n
 1st. Install python3 (https://www.python.org/downloads/)
 2nd. Install chrome (https://www.google.com/intl/en/chrome/) and cromedriver with same version of binary (https://chromedriver.chromium.org/downloads)
 3rd. Copy cromedriver to script folder
