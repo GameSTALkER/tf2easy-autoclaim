@@ -49,6 +49,7 @@ for i_ in range(1337):
 			kontinue = False
 
 	if retry == True:
+		retry = False
 		pass
 	elif kontinue == True:
 		time.sleep(43215)
