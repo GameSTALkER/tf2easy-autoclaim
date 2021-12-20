@@ -14,7 +14,7 @@ from selenium.webdriver.chrome.options import Options
 
 # CONFIG #
 
-DIRECTORY = "C:/Users/ **NAME PC** /AppData/Local/Google/Chrome/User Data/ ** A NAME OF THE FOLDER** "
+DIRECTORY = r"C:\Users\lkihgjuivjbk\AppData\Local\Google\Chrome\User Data\Profile 1"
 
 # SCRIPT #
 
@@ -33,7 +33,7 @@ colorama.init()
 kontinue = True
 retry = False
 
-for i_ in range(1337):
+while True:
 	browser.get('https://www.tf2easy.com/free')
 	
 	try:
